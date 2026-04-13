@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ingressos de Shows - Compre seus ingressos de shows online">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Shows - Ingressos</title>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">   
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-ticket-alt"></i>
+                <span>Ingressos</span>
+            </a>
+
+            <nav class="nav-links">
+                <a href="filmes.html">Filmes</a>
+                <a href="teatros.html">Teatros</a>
+                <a href="shows.html">Shows</a>
+            </nav>
+
+            <div class="header-actions">
+                <button class="btn-cart" onclick="viewCart()">
+                    <i class="fas fa-shopping-cart"></i>
+                </button>
+                <a href="login.html" class="btn-login">Entrar</a>
+                <button class="hamburger" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Shows</h1>
+            <p>As melhores apresentações musicais e shows ao vivo</p>
+        </div>
+    </section>
+
+    <!-- Shows Grid -->
+    <section class="category-section">
+        <div class="container">
+            <div class="grid">
+                <!-- Show 1 -->
+                <article class="ticket-card">
+                    <img src="https://tse3.mm.bing.net/th/id/OIP.pNI0qZUfCfAhABWVRnyXgAHaE8?rs=1&pid=ImgDetMain&o=7&rm=3" alt="The Weeknd" class="ticket-image">
+                    <div class="ticket-content">
+                        <h3>The Weeknd</h3>
+                        <p class="ticket-info"><i class="fas fa-calendar"></i> 30 de Abril - 21:00</p>
+                        <p class="ticket-info"><i class="fas fa-map-marker-alt"></i> Estádio Morumbi</p>
+                        <p class="ticket-description">Apresentação única do ícone do pop moderno</p>
+                        <div class="ticket-footer">
+                            <span class="price">R$ 250,00</span>
+                            <button class="btn-buy" onclick="addToCart('Concert: The Weeknd', 250)">Comprar</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Show 2 -->
+                <article class="ticket-card">
+                    <img src="https://tse4.mm.bing.net/th/id/OIP.7le2CKCZUuBXsvcYn6AZfAHaE7?rs=1&pid=ImgDetMain&o=7&rm=3" alt="tylerthecreator" class="ticket-image">
+                    <div class="ticket-content">
+                        <h3>Tyler the creator</h3>
+                        <p class="ticket-info"><i class="fas fa-calendar"></i> 15 de Maio - 22:00</p>
+                        <p class="ticket-info"><i class="fas fa-map-marker-alt"></i> Parque Ibirapuera</p>
+                        <p class="ticket-description">Talvez sim</p>
+                        <div class="ticket-footer">
+                            <span class="price">R$ 180,00</span>
+                            <button class="btn-buy" onclick="addToCart('Show: Anitta', 180)">Comprar</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Show 3 -->
+                <article class="ticket-card">
+                    <img src="https://th.bing.com/th/id/R.f687d47345e4a13433d286107fc69839?rik=Isy377jpOs0ttQ&pid=ImgRaw&r=0" alt="Coldplay" class="ticket-image">
+                    <div class="ticket-content">
+                        <h3>Concert: Coldplay</h3>
+                        <p class="ticket-info"><i class="fas fa-calendar"></i> 20 de Maio - 20:30</p>
+                        <p class="ticket-info"><i class="fas fa-map-marker-alt"></i> Estádio Pacaembu</p>
+                        <p class="ticket-description">A lendária banda britânica em noite inesquecível</p>
+                        <div class="ticket-footer">
+                            <span class="price">R$ 350,00</span>
+                            <button class="btn-buy" onclick="addToCart('Concert: Coldplay', 350)">Comprar</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Show 4 -->
+                <article class="ticket-card">
+                    <img src="https://marketeer.sapo.pt/wp-content/uploads/2023/05/brazil-groove-music.png" alt="Festival Brasil Groove" class="ticket-image">
+                    <div class="ticket-content">
+                        <h3>Festival Brasil Groove</h3>
+                        <p class="ticket-info"><i class="fas fa-calendar"></i> 12 de Maio - 19:00</p>
+                        <p class="ticket-info"><i class="fas fa-map-marker-alt"></i> Complexo Viradouro</p>
+                        <p class="ticket-description">Festival com os melhores artistas da música brasileira</p>
+                        <div class="ticket-footer">
+                            <span class="price">R$ 199,00</span>
+                            <button class="btn-buy" onclick="addToCart('Festival Brasil Groove', 199)">Comprar</button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 Ingressos. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Plataforma de vendas de ingressos online - Filmes, Teatro e Shows">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Ingressos</title>
+</head>
+<body>
+    <header class="header">   
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-ticket-alt"></i>
+                <span>Ingressos</span>
+            </a>
+
+            <nav class="nav-links">
+                <a href="filmes.html">Filmes</a>
+                <a href="teatros.html">Teatros</a>
+                <a href="shows.html">Shows</a>
+            </nav>
+
+            <div class="header-actions">
+                <a href="login.html" class="btn-login">Entrar</a>
+                <button class="hamburger" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Encontre seus Ingressos</h1>
+            <p>Filmes, Teatro, Shows - Tudo em um só lugar</p>
+        </div>
+    </section>
+
+    <section class="categories">
+        <div class="container">
+            <h2>Escolha uma Categoria</h2>
+            <div class="categories-grid">
+                <a href="filmes.html" class="category-card">
+                    <div class="category-icon">🎬</div>
+                    <h3>Filmes</h3>
+                    <p>Confira os melhores filmes em cartaz</p>
+                </a>
+
+                <a href="teatros.html" class="category-card">
+                    <div class="category-icon">🎭</div>
+                    <h3>Teatros</h3>
+                    <p>Viva a experiência das peças teatrais</p>
+                </a>
+
+                <a href="shows.html" class="category-card">
+                    <div class="category-icon">🎤</div>
+                    <h3>Shows</h3>
+                    <p>Curta os melhores shows e concerts</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2026 Ingressos. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
